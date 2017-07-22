@@ -1,0 +1,26 @@
+version: 2
+jobs:
+  build:
+    working_directory: ~/aa2comment
+
+    docker:
+      - image: circleci/node:8.1.4
+
+    steps:
+      - checkout
+      - restore_cache:
+          key: dependency-cache-{{ checksum "package.json" }}
+      - run:
+          name: npm install
+          command: npm install
+      - save_cache:
+          key: dependency-cache-{{ checksum "package.json" }}
+          paths:
+            - .node_modules
+      - run:
+          name: test
+          command: echo "test"
+      - deploy:
+          name: Deploy to Sakura VPS
+          command: |
+            echo "deploy"
