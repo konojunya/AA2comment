@@ -1,9 +1,11 @@
 {
-  "name": "AA2comment",
-  "version": "1.0.0",
+  "name": "aa2c",
+  "private": true,
+  "version": "0.0.2",
   "description": "ascii art to html comment",
-  "main": "index.js",
+  "main": "build/index.js",
   "scripts": {
+    "prebuild": "rm -rf build",
     "build": "tsc -p tsconfig.json"
   },
   "repository": {
@@ -21,5 +23,6 @@
     "@types/node": "^8.0.14",
     "ava": "^0.21.0",
     "typescript": "^2.4.2"
-  }
+  },
+  "dependencies": {}
 }
