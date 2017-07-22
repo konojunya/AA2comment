@@ -1,0 +1,20 @@
+{
+  "name": "AA2comment",
+  "version": "1.0.0",
+  "description": "ascii art to html comment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/konojunya/AA2comment.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/konojunya/AA2comment/issues"
+  },
+  "homepage": "https://github.com/konojunya/AA2comment#readme"
+}
