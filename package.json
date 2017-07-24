@@ -6,7 +6,9 @@
   "main": "build/index.js",
   "scripts": {
     "prebuild": "rm -rf build",
-    "build": "tsc -p tsconfig.json"
+    "build": "tsc -p tsconfig.json",
+    "dev": "npm run build -- --watch",
+    "lint": "tslint -c tslint.json -p tsconfig.json -t verbose './src/**/*.ts'"
   },
   "repository": {
     "type": "git",
@@ -22,6 +24,7 @@
   "devDependencies": {
     "@types/node": "^8.0.14",
     "ava": "^0.21.0",
+    "tslint": "^5.5.0",
     "typescript": "^2.4.2"
   },
   "dependencies": {}
